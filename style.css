@@ -79,7 +79,7 @@ form button:hover {
 }
 .lista .tarefa {
   cursor: pointer;
-  background-color: #0da68a;
+  background-color: #4d688c;
   color: #fff;
   padding: 10px 100px;
   font-size: 18px;
@@ -87,8 +87,8 @@ form button:hover {
   transition: all 0.5s;
 }
 .lista .tarefa:hover {
-  background-color: #1ad9b6;
-  color: #111;
+  background-color: #739cbf;
+  color: #0d1126;
 }
 .lista .remover {
   cursor: pointer;
