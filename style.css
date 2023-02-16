@@ -14,3 +14,23 @@ button,
 input {
   border: none;
 }
+
+/* === GLOBAL === */
+body {
+  font-family: 'Roboto';
+  background-color: #f2f2f2;
+  padding-block: 100px;
+}
+.container {
+  width: min(100% - 30px, 980px);
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

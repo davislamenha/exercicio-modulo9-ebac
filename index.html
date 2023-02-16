@@ -13,18 +13,20 @@
 </head>
 
 <body>
-  <h1>Lista de Tarefas</h1>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
 
-  <form>
-    <input type="text" id="tarefa-nome" placeholder="Nome da Tarefa" required>
-    <button type="submit" id="botao-adicionar">Cadastrar</button>
-  </form>
+    <form>
+      <input type="text" id="tarefa-nome" placeholder="Nome da Tarefa" required>
+      <button type="submit" id="botao-adicionar">Cadastrar</button>
+    </form>
 
-  <ul class="lista">
-    <li class="tarefa-0">
-      <span class="tarefa-span">Arrumar a cama</span><span class="remover-0"></span>
-    </li>
-  </ul>
+    <ul class="lista">
+      <li class="tarefa-0">
+        <span class="tarefa-span">Arrumar a cama</span><span class="remover-0"></span>
+      </li>
+    </ul>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="./main.js"></script>
