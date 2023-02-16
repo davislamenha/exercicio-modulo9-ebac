@@ -40,6 +40,7 @@ form {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 form input {
   font-size: 24px;
@@ -66,4 +67,67 @@ form button {
 }
 form button:hover {
   background-color: #0da68a;
+}
+
+/* === LISTA === */
+.lista {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.lista li {
+  display: flex;
+}
+.lista .tarefa {
+  cursor: pointer;
+  background-color: #0da68a;
+  color: #fff;
+  padding: 10px 100px;
+  font-size: 18px;
+  font-family: cursive;
+  transition: all 0.5s;
+}
+.lista .tarefa:hover {
+  background-color: #1ad9b6;
+  color: #111;
+}
+.lista .remover {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background-color: #bf2626;
+  padding: 10px 25px;
+  transition: all 0.5s;
+}
+.lista .remover::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  background-color: #fff;
+  width: 60%;
+  height: 2px;
+  top: calc(50% - 2px);
+  left: 20%;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+.lista .remover::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  background-color: #fff;
+  width: 60%;
+  height: 2px;
+  top: calc(50% - 2px);
+  left: 20%;
+  transform: rotate(-45deg);
+  transition: all 0.5s;
+}
+.lista .remover:hover {
+  background-color: #d94a4a;
+}
+.lista .remover:hover::before {
+  transform: rotate(135deg);
+}
+.lista .remover:hover::after {
+  transform: rotate(-135deg);
 }
