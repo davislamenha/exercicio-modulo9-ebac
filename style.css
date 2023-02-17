@@ -71,20 +71,24 @@ form button:hover {
 
 /* === LISTA === */
 .lista {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .lista li {
   display: flex;
 }
 .lista .tarefa {
+  text-align: center;
+  white-space: nowrap;
   cursor: pointer;
   background-color: #4d688c;
   color: #fff;
-  padding: 10px 100px;
+  padding: 10px;
   font-size: 18px;
   font-family: cursive;
   transition: all 0.5s;
+  width: 400px;
 }
 .lista .tarefa:hover {
   background-color: #739cbf;
