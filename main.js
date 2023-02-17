@@ -4,6 +4,7 @@ $('form').on('submit', (e) => {
   e.preventDefault();
   adicionarTarefa();
   ativarRemover();
+  ativarRiscarTarefa();
 });
 
 function adicionarTarefa() {
@@ -27,5 +28,11 @@ function ativarRemover() {
     setTimeout(() => {
       $(`#tarefa-${id}`).remove();
     }, 600);
+  });
+}
+
+function ativarRiscarTarefa() {
+  $('.tarefa').on('click', ({ target }) => {
+    $(target).css('text-decoration', 'line-through');
   });
 }
