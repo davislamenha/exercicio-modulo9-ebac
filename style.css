@@ -76,7 +76,7 @@ form button:hover {
   gap: 8px;
 }
 .lista li {
-  display: flex;
+  display: none;
 }
 .lista .tarefa {
   text-align: center;
